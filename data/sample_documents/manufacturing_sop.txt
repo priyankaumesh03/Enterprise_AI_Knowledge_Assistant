@@ -1,0 +1,60 @@
+MANUFACTURING OPERATIONS AND SAFETY HANDBOOK
+============================================
+
+1. MACHINE OPERATION PROCEDURE
+
+Employees must receive proper training before operating
+manufacturing equipment.
+
+Operators must inspect the machine before starting production.
+
+Any unusual noise, vibration or overheating must be reported
+to the maintenance department immediately.
+
+2. PREVENTIVE MAINTENANCE
+
+Preventive maintenance involves regularly inspecting and servicing
+equipment to prevent unexpected failures.
+
+Production machines should undergo scheduled maintenance
+according to the manufacturer's recommendations.
+
+Maintenance activities must be recorded in the equipment
+maintenance log.
+
+3. WORKPLACE SAFETY
+
+Employees must wear appropriate personal protective equipment
+(PPE), including safety shoes, gloves and protective eyewear.
+
+Emergency exits must remain accessible at all times.
+
+Employees must never operate equipment without proper training.
+
+4. EQUIPMENT FAILURE
+
+If equipment stops working unexpectedly, operators must stop
+using the machine and inform the maintenance supervisor.
+
+Employees must not attempt unauthorized repairs.
+
+All equipment failures must be recorded in the maintenance
+reporting system.
+
+5. QUALITY CONTROL
+
+Manufactured products must undergo quality inspections
+before being approved for dispatch.
+
+Products that fail quality checks must be separated
+and reported to the quality control department.
+
+6. EMERGENCY PROCEDURES
+
+Employees must follow the company's emergency response plan
+during fire, equipment accidents or other emergencies.
+
+Emergency incidents must be reported to the safety supervisor.
+
+Employees must follow instructions from authorized
+emergency response personnel.

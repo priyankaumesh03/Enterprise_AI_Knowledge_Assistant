@@ -1,0 +1,42 @@
+[
+    {
+        "question": "How many days of annual leave are provided?",
+        "expected_source": "hr_policy.txt"
+    },
+    {
+        "question": "How many sick leave days are available?",
+        "expected_source": "hr_policy.txt"
+    },
+    {
+        "question": "How many days can employees work from home?",
+        "expected_source": "hr_policy.txt"
+    },
+    {
+        "question": "How can employees reset their password?",
+        "expected_source": "it_support_guide.txt"
+    },
+    {
+        "question": "What should employees do if their account gets locked?",
+        "expected_source": "it_support_guide.txt"
+    },
+    {
+        "question": "How can employees connect to the company VPN?",
+        "expected_source": "it_support_guide.txt"
+    },
+    {
+        "question": "What should employees do when equipment fails?",
+        "expected_source": "manufacturing_sop.txt"
+    },
+    {
+        "question": "How often should preventive maintenance be performed?",
+        "expected_source": "manufacturing_sop.txt"
+    },
+    {
+        "question": "What is the company's maternity leave policy?",
+        "expected_source": "unknown"
+    },
+    {
+        "question": "What is the company's annual bonus amount?",
+        "expected_source": "unknown"
+    }
+]

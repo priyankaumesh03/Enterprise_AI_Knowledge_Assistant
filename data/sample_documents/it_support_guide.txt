@@ -1,0 +1,62 @@
+COMPANY IT SUPPORT AND TROUBLESHOOTING GUIDE
+============================================
+
+1. PASSWORD RESET PROCEDURE
+
+Employees who forget their company account password should visit
+the organization's official password reset portal.
+
+Employees must verify their identity using their registered email
+or multi-factor authentication (MFA).
+
+If the password reset process fails, employees should contact
+the IT Helpdesk.
+
+2. ACCOUNT LOCKOUT
+
+A company account may become temporarily locked after five
+consecutive incorrect login attempts.
+
+Employees should wait 15 minutes before trying again or contact
+the IT Helpdesk for assistance.
+
+3. EMAIL CONFIGURATION
+
+Employees must use their official company email account
+for business communication.
+
+Email access is available through the organization's approved
+webmail portal or configured email application.
+
+4. VPN ACCESS
+
+Remote employees must connect through the organization's
+approved Virtual Private Network (VPN).
+
+Employees should use their assigned credentials and complete
+MFA verification before accessing internal resources.
+
+5. SOFTWARE INSTALLATION
+
+Employees must obtain IT department approval before installing
+new software on company-owned devices.
+
+Only authorized and licensed software may be installed.
+
+6. HARDWARE ISSUES
+
+Employees experiencing laptop, keyboard, mouse or monitor problems
+should raise a support ticket with the IT Helpdesk.
+
+The ticket should include the device asset ID, problem description
+and any relevant error messages.
+
+7. IT HELPDESK SUPPORT
+
+Employees can report technical issues through the company's
+IT service management portal.
+
+Each request receives a unique ticket number for tracking.
+
+Employees should provide accurate details to help the IT team
+resolve issues efficiently.
