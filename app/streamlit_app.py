@@ -12,10 +12,11 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 
 # --------------------------------------------------
-# IMPORT RAG PIPELINE
+# IMPORT RAG PIPELINE AND QUERY CLASSIFIER
 # --------------------------------------------------
 
 from src.generation.generate_answer import generate_answer
+from src.utils.query_classifier import classify_query
 
 
 # --------------------------------------------------
@@ -272,7 +273,7 @@ user_question = st.chat_input(
 
 
 # --------------------------------------------------
-# GENERATE ANSWER
+# QUERY CLASSIFICATION AND ANSWER GENERATION
 # --------------------------------------------------
 
 if user_question:
@@ -291,19 +292,67 @@ if user_question:
 
     with st.chat_message("assistant"):
 
-        with st.spinner(
-            "🔍 Searching knowledge base and generating answer..."
-        ):
+        with st.spinner("🤖 Preparing your response..."):
 
             try:
 
                 start_time = time.time()
 
-                answer, sources = generate_answer(user_question)
+                # ------------------------------------------
+                # STEP 1: CLASSIFY USER QUERY
+                # ------------------------------------------
+
+                intent = classify_query(user_question)
+
+                # ------------------------------------------
+                # STEP 2: HANDLE CASUAL CONVERSATIONS
+                # ------------------------------------------
+
+                if intent == "greeting":
+
+                    answer = (
+                        "Hello! 👋 Welcome to the Enterprise AI Knowledge "
+                        "Assistant. How can I help you today?"
+                    )
+
+                    sources = []
+
+                elif intent == "appreciation":
+
+                    answer = (
+                        "You're very welcome! 😊 Happy to help."
+                    )
+
+                    sources = []
+
+                elif intent == "general_conversation":
+
+                    answer = (
+                        "I'm doing well, thank you! 😊 "
+                        "I'm your Enterprise AI Knowledge Assistant. "
+                        "I can help you with HR policies, IT support, "
+                        "and manufacturing operations."
+                    )
+
+                    sources = []
+
+                # ------------------------------------------
+                # STEP 3: HANDLE KNOWLEDGE-BASED QUESTIONS
+                # ------------------------------------------
+
+                else:
+
+                    answer, sources = generate_answer(user_question)
+
+                # ------------------------------------------
+                # STEP 4: CALCULATE RESPONSE TIME
+                # ------------------------------------------
 
                 response_time = time.time() - start_time
 
-                # Display answer
+                # ------------------------------------------
+                # STEP 5: DISPLAY ANSWER
+                # ------------------------------------------
 
                 st.markdown(answer)
 
@@ -322,7 +371,9 @@ if user_question:
                     f"⏱️ Response time: {response_time:.2f} seconds"
                 )
 
-                # Save assistant response
+                # ------------------------------------------
+                # STEP 6: SAVE ASSISTANT RESPONSE
+                # ------------------------------------------
 
                 st.session_state.messages.append({
                     "role": "assistant",
